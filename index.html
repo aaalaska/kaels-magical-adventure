@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kael's Magical Adventure</title>
+  <style>
+    :root {
+      --paper: #faf9f5;
+      --ink: #2b2118;
+      --muted: #6b5d4d;
+      --rule: #e2dbcb;
+      --card: #fffdf7;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: ui-serif, Georgia, "Iowan Old Style", serif;
+      line-height: 1.5;
+      padding: 8vh 24px 12vh;
+    }
+    main { max-width: 720px; margin: 0 auto; }
+    .eyebrow {
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: clamp(2.1rem, 6vw, 3.2rem);
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: 1.1;
+    }
+    .lede {
+      margin-top: 14px;
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 46ch;
+    }
+    ul { list-style: none; margin-top: 48px; }
+    li + li { margin-top: 12px; }
+    a.card {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 20px 22px;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+    }
+    a.card:hover, a.card:focus-visible {
+      border-color: #c9bfa9;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(43, 33, 24, 0.08);
+    }
+    a.card:focus-visible { outline: 2px solid #9b3324; outline-offset: 3px; }
+    .swatch {
+      flex: none;
+      width: 40px; height: 40px;
+      border-radius: 8px;
+      border: 1px solid rgba(43, 33, 24, 0.12);
+    }
+    .title { font-size: 1.15rem; font-weight: 600; }
+    .desc {
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Concept exploration</p>
+    <h1>Kael&rsquo;s Magical Adventure</h1>
+    <p class="lede">Four prototype pages from the exploration. Each opens as a standalone, self-contained page.</p>
+
+    <ul>
+      <li>
+        <a class="card" href="landing.html">
+          <span class="swatch" style="background:#9b3324"></span>
+          <span>
+            <span class="title">Landing</span>
+            <span class="desc">The main landing page</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="v2.html">
+          <span class="swatch" style="background:#43301c"></span>
+          <span>
+            <span class="title">Version 2</span>
+            <span class="desc">Second pass on the full experience</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="naming.html">
+          <span class="swatch" style="background:#a3823f"></span>
+          <span>
+            <span class="title">Naming</span>
+            <span class="desc">Name exploration &mdash; &ldquo;Begin&rdquo;</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="competitors.html">
+          <span class="swatch" style="background:#2b2118"></span>
+          <span>
+            <span class="title">Competitors</span>
+            <span class="desc">Landscape and comparison</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+
+    <footer>Each page is a self-contained bundle and may take a moment to load.</footer>
+  </main>
+</body>
+</html>
