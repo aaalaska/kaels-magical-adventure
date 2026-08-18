@@ -7,8 +7,8 @@ The pages form a linked flow:
 
 ```
 index.html  ──"Enter Ye Tourney"──▶  naming.html  ──"Unfurl the Scroll"──▶  competitors.html
-                                          │
-                                          └──"The Judges' Door"──▶  judges-page.html
+
+judges-page.html is intentionally not linked from the flow — reach it by URL.
 ```
 
 | Page | File |
@@ -16,6 +16,6 @@ index.html  ──"Enter Ye Tourney"──▶  naming.html  ──"Unfurl the Sc
 | Landing (entry point) | `index.html` |
 | Naming | `naming.html` |
 | Competitors | `competitors.html` |
-| Judge's Page | `judges-page.html` |
+| Judge's Page (unlinked) | `judges-page.html` |
 
 Each file is a self-contained HTML bundle — no build step, no external dependencies.
